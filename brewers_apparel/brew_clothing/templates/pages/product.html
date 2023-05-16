@@ -1,0 +1,34 @@
+{% extends 'pages/index.html' %} {% block content %}
+<h1>{{ product.name }}</h1>
+<p>Category - {{ product.category.name }}</p>
+<p>Price: ${{ product.cost }}</p>
+
+{% if product.image %}
+<img
+  src="{{ product.image.url }}"
+  alt="{{ product.name }} Image"
+  style="max-width: 300px; max-height: 325px"
+/>
+{% else %}
+<p>No image available</p>
+{% endif %}
+
+<form method="post" action="{% url 'add_to_cart' product.id %}">
+  {% csrf_token %}
+  <label for="quantity">Quantity:</label>
+  <input type="number" name="quantity" id="quantity" min="1" value="1" />
+  <button class="btn btn-primary" type="submit">Add to Cart</button>
+</form>
+
+{% if related_products %}
+<h2>Related Products:</h2>
+<ul>
+  {% for related_product in related_products %}
+  <li>
+    <a href="{% url 'product' related_product.name %}">
+      {{ related_product.name }} - ${{ related_product.cost }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %} {% endblock content %}

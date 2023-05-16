@@ -1,0 +1,23 @@
+[    
+  {        
+  "model": "brew_clothing.category",        
+      "pk": 1,        
+          "fields": {            
+              "name": "Men's Clothing"        }    
+  },
+  
+  {        
+  "model": "brew_clothing.category",
+      "pk": 2,        
+          "fields": {
+              "name": "Women's Clothing"        }    
+  },
+
+  {        
+  "model": "brew_clothing.category",
+      "pk": 3,        
+          "fields": {
+              "name": "Kid's Clothing"        }    
+  }
+]
+

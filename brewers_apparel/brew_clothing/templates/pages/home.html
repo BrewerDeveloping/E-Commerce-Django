@@ -1,0 +1,64 @@
+{% extends "pages/index.html" %} {% block content %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+<!-- link to the customized CSS file -->
+
+<div class="container mt-5">
+  <h1>Discover the Latest Fashion Trends</h1>
+  <p>
+    Explore our wide range of stylish and affordable clothing for men, women,
+    and kids. From casual wear to formal attire, we have everything you need to
+    elevate your wardrobe.
+  </p>
+  <h2>Shop Our Collection</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img
+          src="static/img/men.jpg"
+          class="card-img-top"
+          alt="Men's Clothing"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Men's Clothing</h5>
+          <p class="card-text">
+            Shop our collection of men's clothing, including shirts, pants,
+            shorts, and more.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img
+          src="static/img/women.jpg"
+          class="card-img-top"
+          alt="Women's Clothing"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Women's Clothing</h5>
+          <p class="card-text">
+            Find the latest styles in women's clothing, including dresses, tops,
+            and skirts.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img
+          src="static/img/kids.jpg"
+          class="card-img-top"
+          alt="Kid's Clothing"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kid's Clothing</h5>
+          <p class="card-text">
+            Dress up your little ones with our adorable collection of kids'
+            clothing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

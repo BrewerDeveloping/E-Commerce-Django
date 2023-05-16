@@ -1,0 +1,40 @@
+{% extends 'pages/index.html' %} {% block content %}
+<div class="container">
+  <h1>Shopping Cart</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total Price</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in cart_items %}
+      <tr>
+        <td>{{ item.product_id.name }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.product_id.cost }}</td>
+        <td>{{ item.quantity|multiply:item.product_id.cost }}</td>
+        <td>
+          <form
+            method="POST"
+            action="{% url 'remove_from_cart' product_id=item.product_id.id %}"
+          >
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Remove</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="col-md-6 offset-md-6">
+      <h4 class="text-right">Total: {{ total_cost }}</h4>
+    </div>
+  </div>
+</div>
+{% endblock %}

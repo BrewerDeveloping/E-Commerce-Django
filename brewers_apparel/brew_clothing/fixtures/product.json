@@ -1,0 +1,92 @@
+[
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 1,
+            "name": "Men's-T-Shirt",
+            "category": 1,
+            "cost": 19.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 4,
+            "name": "Men's-Jacket",
+            "category": 1,
+            "cost": 39.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 5,
+            "name": "Men's-Pants",
+            "category": 1,
+            "cost": 25.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 2,
+            "name": "Women's-Dress",
+            "category": 2,
+            "cost": 15.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 6,
+            "name": "Women's-T-Shirt",
+            "category": 2,
+            "cost": 19.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 7,
+            "name": "Women's-Pants",
+            "category": 2,
+            "cost": 23.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 3,
+            "name": "Kid's-Jacket",
+            "category": 3,
+            "cost": 10.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 8,
+            "name": "Kid's-Pants",
+            "category": 3,
+            "cost": 8.99
+          }    
+    },
+    {        
+  "model": "brew_clothing.product",        
+      "pk": 1,        
+          "fields": {
+            "id": 9,
+            "name": "Kid's-T-Shirt",
+            "category": 3,
+            "cost": 6.99
+          }    
+    }
+]
